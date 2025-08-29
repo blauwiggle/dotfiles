@@ -11,7 +11,6 @@ eval "$(devbox global shellenv --init-hook)"
 LANG=en_US.UTF-8
 
 # Completions
-source <(devbox completion zsh)
 source <(docker completion zsh)
 source <(kubectl completion zsh)
 

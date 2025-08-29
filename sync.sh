@@ -1,4 +1,4 @@
-rm ~/.zshrc
+rm -rf ~/.zshrc
 
 stow .
 

@@ -1,2 +1,11 @@
 /.gitignore
 /.git
+
+/defaults/com.apple.dock.plist
+/defaults/com.apple.finder.plist
+/defaults/NSGlobalDomain.plist
+
+/.DS_Store
+/Brewfile
+/install.sh
+/sync.sh
