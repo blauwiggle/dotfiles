@@ -9,3 +9,6 @@
 /Brewfile
 /install.sh
 /sync.sh
+/Brewfile.server
+/brewfile-sync.sh
+/launchd
