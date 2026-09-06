@@ -9,7 +9,6 @@ exec > >(tee -a ~/install.log) 2>&1
 step() { printf '\n==> [%s] %s\n' "$(date +%H:%M:%S)" "$*"; }
 
 step "start: $(hostname -s), brewfile=${BREWFILE:-Brewfile}"
-touch ~/.hushlogin
 
 step "homebrew"
 command -v brew >/dev/null && echo "already installed: $(brew --version | head -1)" \
