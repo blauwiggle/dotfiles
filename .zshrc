@@ -1,5 +1,8 @@
 # ~/.zshrc — interactive shell config (managed via dotfiles)
 
+# Exports
+[ -f ~/.config/secrets/azdo.zsh ] && source ~/.config/secrets/azdo.zsh
+
 # ── Locale ──────────────────────────────────────────────
 export LANG=en_US.UTF-8
 
@@ -113,6 +116,14 @@ alias flur='flutter clean && flutter pub get && flutter run'
 alias crossover-reset='bash -c "$(curl -fsSL https://raw.githubusercontent.com/Nygosaki/crossover-trial-renew/refs/heads/main/resetCrossoverTrial.sh)"'
 alias gggg='go fmt ./...; go vet ./...; go test ./...; golangci-lint run ./...'
 alias j!=jbang   # JBang
+alias attestory-kv='npx wrangler kv key list --namespace-id b19d177b109a4ea3b663984676d7b4c4 --remote'
+
+[ -f ~/.config/secrets/claude-tokens.zsh ] && source ~/.config/secrets/claude-tokens.zsh
+alias claude1='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_A" claude'
+alias claude2='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_B" claude'
+
+alias cc1='claude'  # Hauptaccount + Brain = echter Default ~/.claude
+alias cc2='CLAUDE_CONFIG_DIR=~/.claude-cc2 claude'
 
 # ── Tool initialization ─────────────────────────────────
 eval "$(starship init zsh)"
@@ -142,3 +153,8 @@ watch-claude() {
 
 # zoxide must be initialized at the very end of this file.
 eval "$(zoxide init --cmd cd zsh)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/michi/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
