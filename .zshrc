@@ -128,7 +128,7 @@ alias cc2='CLAUDE_CONFIG_DIR=~/.claude-cc2 claude'
 # ── Tool initialization ─────────────────────────────────
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
-eval "$(rbenv init - zsh)"
+command -v rbenv >/dev/null && eval "$(rbenv init - zsh)"  # not on the server subset
 
 # thefuck is slow (spawns Python) — lazy-load on first use instead of
 # paying the cost on every shell start.
