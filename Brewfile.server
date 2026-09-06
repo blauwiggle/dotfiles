@@ -61,3 +61,6 @@ vscode "swiftlang.swift-vscode"
 vscode "tilt-dev.tiltfile"
 vscode "tomoki1207.pdf"
 vscode "yzane.markdown-pdf"
+
+# Terminal: Warp (settings come from defaults/dev.warp.Warp-Stable.plist and warp/settings.toml)
+cask "warp"
