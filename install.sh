@@ -22,6 +22,7 @@ step "zinit"
   || NO_INPUT=1 NO_EDIT=1 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 step "brew bundle --file=./${BREWFILE:-Brewfile}"
+brew trust hashicorp/tap 2>/dev/null || true   # Homebrew 6 refuses untrusted taps; a no-op on older brews
 brew bundle ${VERBOSE:+--verbose} --file="./${BREWFILE:-Brewfile}"
 
 step "macOS defaults"

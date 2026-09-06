@@ -1,7 +1,7 @@
 # Server subset — the Mac mini M4 runs remit's host substrate and nothing else:
 # no desktop apps, no editors, no office. Install with
 #   brew bundle --file=~/dotfiles/Brewfile.server
-tap "hashicorp/tap"
+tap "hashicorp/tap", trusted: true
 brew "bat"
 brew "cosign"
 brew "direnv"
@@ -33,7 +33,6 @@ vscode "bufbuild.vscode-buf"
 vscode "cuelangorg.vscode-cue"
 vscode "dart-code.dart-code"
 vscode "dart-code.flutter"
-vscode "dracula-theme-pro.theme-dracula-pro"
 vscode "drblury.protobuf-vsc"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
