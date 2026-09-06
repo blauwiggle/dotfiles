@@ -121,9 +121,11 @@ alias attestory-kv='npx wrangler kv key list --namespace-id b19d177b109a4ea3b663
 [ -f ~/.config/secrets/claude-tokens.zsh ] && source ~/.config/secrets/claude-tokens.zsh
 alias claude1='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_A" claude'
 alias claude2='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_B" claude'
+alias claude3='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_C" claude'
 
 alias cc1='claude'  # Hauptaccount + Brain = echter Default ~/.claude
 alias cc2='CLAUDE_CONFIG_DIR=~/.claude-cc2 claude'
+alias cc3='CLAUDE_CONFIG_DIR=~/.claude-cc3 claude'
 
 # ── Tool initialization ─────────────────────────────────
 eval "$(starship init zsh)"
