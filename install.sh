@@ -28,6 +28,8 @@ step "macOS defaults"
 defaults import com.apple.dock ./defaults/com.apple.dock.plist
 defaults import com.apple.finder ./defaults/com.apple.finder.plist
 defaults import NSGlobalDomain ./defaults/NSGlobalDomain.plist
+defaults import dev.warp.Warp-Stable ./defaults/dev.warp.Warp-Stable.plist
+mkdir -p ~/.warp && cp -n ./warp/settings.toml ~/.warp/settings.toml 2>/dev/null || true
 killall Dock Finder SystemUIServer 2>/dev/null || true
 
 step "done"

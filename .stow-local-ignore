@@ -12,3 +12,5 @@
 /Brewfile.server
 /brewfile-sync.sh
 /launchd
+/warp
+/defaults/dev.warp.Warp-Stable.plist
