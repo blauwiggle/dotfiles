@@ -45,6 +45,8 @@ brew "cloudflared"
 brew "ruby"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima", restart_service: :changed
 # Container Signing
 brew "cosign"
 # Validate and define text-based and dynamic configuration
@@ -155,10 +157,14 @@ brew "thefuck"
 brew "tilt"
 # Official tldr client written in Rust
 brew "tlrc"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # JavaScript package manager
 brew "yarn"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -185,28 +191,20 @@ brew "hashicorp/tap/vault"
 brew "stripe/stripe-cli/stripe"
 # Kubernetes bulk port forwarding utility.
 brew "txn2/tap/kubefwd"
-# Command-line tools for building and debugging Android apps
-cask "android-commandlinetools"
+# Agent orchestration platform
+cask "antigravity"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
-# Tool to run Windows software
-cask "crossover"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
 # Online diagram software
 cask "drawio"
-# UI toolkit for building applications for mobile, web and desktop
-cask "flutter"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono"
@@ -222,16 +220,10 @@ cask "jetbrains-toolbox"
 cask "linear"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Office suite
-cask "microsoft-office"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# AI coding agent desktop client
-cask "opencode-desktop"
-# Collaboration platform for API development
-cask "postman"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Graphical user interface for the 'defaults' command
 cask "prefs-editor"
 # GUI for streamlined Redis application development
@@ -250,8 +242,8 @@ cask "visual-studio-code"
 cask "warp"
 # Native desktop client for WhatsApp
 cask "whatsapp"
-# Connect to Windows
-cask "windows-app"
+# Terminal for agent-driven development
+cask "zentty"
 vscode "bufbuild.vscode-buf"
 vscode "cuelangorg.vscode-cue"
 vscode "dart-code.dart-code"
