@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- System LaunchDaemon (root): /var/run is cleared at boot, so recreate the default Docker socket
+       path as a symlink to OrbStack's user socket. A dangling link is fine until OrbStack starts at login.
+       The self-hosted runners' jobs dial unix:///var/run/docker.sock. Install: sudo sh docker-socket-install.sh -->
+  <key>Label</key><string>com.blauwiggle.docker-socket</string>
+  <key>ProgramArguments</key>
+  <array><string>/bin/ln</string><string>-sfh</string><string>/Users/michi/.orbstack/run/docker.sock</string><string>/var/run/docker.sock</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>StandardErrorPath</key><string>/tmp/docker-socket.log</string>
+</dict>
+</plist>
