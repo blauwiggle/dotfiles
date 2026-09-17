@@ -171,6 +171,8 @@ brew "yarn"
 brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# High-performance theorem prover
+brew "z3"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # The AI coding agent built for the terminal.
