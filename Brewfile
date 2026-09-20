@@ -131,6 +131,8 @@ brew "pnpm"
 brew "poppler"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Static type checker for Python
+brew "pyright"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Python interface to Tcl/Tk
@@ -141,6 +143,8 @@ brew "python-tk@3.14"
 brew "rbenv"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
 # Toolkit to help you get started with Spec-Driven Development
 brew "specify"
 # Cross-shell prompt for astronauts
@@ -246,6 +250,8 @@ cask "warp"
 cask "whatsapp"
 # Terminal for agent-driven development
 cask "zentty"
+# Video communication and virtual meeting platform
+cask "zoom"
 vscode "bufbuild.vscode-buf"
 vscode "cuelangorg.vscode-cue"
 vscode "dart-code.dart-code"
