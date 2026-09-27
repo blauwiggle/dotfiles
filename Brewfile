@@ -45,8 +45,6 @@ brew "cloudflared"
 brew "ruby"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima", restart_service: :changed
 # Container Signing
 brew "cosign"
 # Validate and define text-based and dynamic configuration
@@ -121,6 +119,8 @@ brew "lnav"
 brew "md2pdf"
 # Project documentation with Markdown
 brew "mkdocs"
+# Manage multiple Node.js versions
+brew "nvm"
 # Shell command parallelization utility
 brew "parallel"
 # Execute binaries from Python packages in isolated environments
@@ -133,6 +133,8 @@ brew "poppler"
 brew "protobuf"
 # Static type checker for Python
 brew "pyright"
+# Simple powerful testing with Python
+brew "pytest"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Python interface to Tcl/Tk
@@ -283,6 +285,7 @@ vscode "swiftlang.swift-vscode"
 vscode "tilt-dev.tiltfile"
 vscode "tomoki1207.pdf"
 vscode "yzane.markdown-pdf"
+go "github.com/rhysd/actionlint/cmd/actionlint"
 go "github.com/zricethezav/gitleaks/v8"
 go "golang.org/x/tools/cmd/goimports"
 go "golang.org/x/tools/gopls"
