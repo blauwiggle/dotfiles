@@ -106,6 +106,8 @@ alias ll='eza --long --all --no-permissions --no-filesize --no-user --git --sort
 alias fzfp='fzf --preview "bat --style numbers --color always {}"'
 alias cat='bat --paging never --theme DarkNeon --style plain'
 alias k=kubectl
+# k9s on the Mac mini's cluster (a login shell, so Homebrew's PATH): k9mini [namespace] [view]
+k9mini() { ssh -t michi@mac-mini-m4 "zsh -lc 'k9s -n ${1:-arc-runners} -c ${2:-pods}'"; }
 alias tf=terraform
 alias bru="brew update && brew upgrade && brew cleanup && brew doctor"
 alias x="exit"
