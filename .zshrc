@@ -125,9 +125,16 @@ alias claude1='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_A" claude'
 alias claude2='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_B" claude'
 alias claude3='CLAUDE_CODE_OAUTH_TOKEN="$CLAUDE_CODE_OAUTH_TOKEN_C" claude'
 
-alias cc1='claude'  # Hauptaccount + Brain = echter Default ~/.claude
-alias cc2='CLAUDE_CONFIG_DIR=~/.claude-cc2 claude'
-alias cc3='CLAUDE_CONFIG_DIR=~/.claude-cc3 claude'
+# alias cc1='claude'  # Hauptaccount + Brain = echter Default ~/.claude
+# alias cc2='CLAUDE_CONFIG_DIR=~/.claude-cc2 claude'
+# alias cc3='CLAUDE_CONFIG_DIR=~/.claude-cc3 claude'
+
+# alias cx1='steward cx1'
+# alias cx2='steward cx2'
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # ── Tool initialization ─────────────────────────────────
 eval "$(starship init zsh)"
@@ -162,3 +169,11 @@ fpath=(/Users/michi/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+[ -f ~/Developer/attestory/steward/tools/steward.zsh ] && source ~/Developer/attestory/steward/tools/steward.zsh  # absent on the Mac mini
+alias cc1='claude'  # Hauptaccount + Brain = echter Default ~/.claude
+alias cc2='CLAUDE_CONFIG_DIR=~/.claude-cc2 claude'
+alias cc3='CLAUDE_CONFIG_DIR=~/.claude-cc3 claude'
+
+alias cx1='steward cx1'
+alias cx2='steward cx2'
