@@ -14,3 +14,8 @@
 /launchd
 /warp
 /defaults/dev.warp.Warp-Stable.plist
+
+/brewfile-apply.sh
+/claude-config-dir.sh
+/docker-socket-install.sh
+/defaults
