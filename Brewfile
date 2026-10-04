@@ -9,6 +9,7 @@ tap "redpanda-data/tap", trusted: true
 tap "snyk/tap", trusted: true
 tap "stripe/stripe-cli", trusted: true
 tap "txn2/tap", trusted: true
+tap "vordenken/autopip", "https://github.com/vordenken/AutoPiP"
 # Run your GitHub Actions locally
 brew "act"
 # GitOps Continuous Delivery for Kubernetes
@@ -203,6 +204,8 @@ brew "txn2/tap/kubefwd"
 cask "antigravity"
 # Terminal interface for Antigravity agents
 cask "antigravity-cli"
+# Safari extension for automatic Picture-in-Picture video playback
+cask "vordenken/autopip/autopip"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
@@ -244,12 +247,12 @@ cask "slack"
 cask "spotify"
 # Video game digital distribution service
 cask "steam"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
 # Open-source code editor
 cask "visual-studio-code"
 # Rust-based terminal
 cask "warp"
-# Native desktop client for WhatsApp
-cask "whatsapp"
 # Terminal for agent-driven development
 cask "zentty"
 # Video communication and virtual meeting platform
